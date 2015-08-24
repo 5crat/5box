@@ -1,0 +1,16 @@
+body{
+    margin-top:10px;
+    width: 400px;
+    height: 250px;
+}
+button,textarea{
+    margin-top: 5px;;
+}
+.row{
+    margin: 5px;
+}
+#statusInfo{
+    padding-top: 10px;
+    width: 40%;
+    height: 25px;;
+}

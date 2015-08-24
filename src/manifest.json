@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "5box",
+    "description": "这是一个辅助安全测试的工具集合",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "img/icon.png",
+        "default_popup": "html/popup.html"
+    },
+    "devtools_page": "html/devtools.html",
+    "permissions": [
+        "tabs",
+        "cookies",
+        "<all_urls>"
+    ]
+}

@@ -191,10 +191,10 @@ $(document).ready(function(){
      */
     var Urlcode = {
         encode : function(str){
-            return encodeURIComponent(str);
+            return escape(str);
         },
         decode : function(str){
-            return decodeURIComponent(str);
+            return unescape(str);
         }
     };
 

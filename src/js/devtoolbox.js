@@ -207,9 +207,21 @@ $(document).ready(function(){
         },
         decode : function(str){
             var res = '';
-            var strs = str.split(',');
-            for (var i=0;i<strs.length;i++){
-                res += String.fromCharCode(parseInt(strs[i]))
+            if (str.indexOf(',') > -1){
+                var strs = str.split(',');
+                for (var i=0;i<strs.length;i++){
+                    res += String.fromCharCode(parseInt(strs[i]))
+                }
+            }else if(str.indexOf('0x')>-1 || str.indexOf('0X')>-1){
+                str = str.substring(2);
+                var strs = [];
+                for (var m= 0,n=0;m<str.length;m+=2){
+                    strs[n] = str.substring(m,m+2);
+                    n++;
+                }
+                for (var i=0;i<strs.length;i++){
+                    res += String.fromCharCode(parseInt(strs[i],16))
+                }
             }
             return res;
         }

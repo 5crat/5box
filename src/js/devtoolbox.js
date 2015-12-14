@@ -210,9 +210,7 @@ $(document).ready(function(){
             var reg1 = /\d+/g;
             str = str.toLowerCase()
             if(str.indexOf('char(' > -1)){
-                console.log(str);
                 strs = str.match(reg1);
-                console.log(strs);
                 for (i=0;i < strs.length;i++){
                     if (strs[i].indexOf('0x') > -1){
                         res += String.fromCharCode(parseInt(strs[i],16));

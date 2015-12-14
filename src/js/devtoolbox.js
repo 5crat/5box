@@ -207,19 +207,31 @@ $(document).ready(function(){
         },
         decode : function(str){
             var res = '';
-            if (str.indexOf(',') > -1){
-                var strs = str.split(',');
+            var reg1 = "/\d+/g";
+            str = str.toLowerCase()
+            if(str.indexOf('char(' > -1)){
+                strs = str.match(reg1);
+                for (i=0;i<strs.length;i++){
+                    if (strs[i].indexOf('0x') > -1){
+                        res += String.fromCharCode(parseInt(strs[i],16));
+                    }else{
+                        res += String.fromCharCode(parseInt(strs[i]));
+                    }
+                }
+            }
+            else if (str.indexOf(',') > -1){
+                strs = str.split(',');
                 for (var i=0;i<strs.length;i++){
                     res += String.fromCharCode(parseInt(strs[i]))
                 }
-            }else if(str.indexOf('0x')>-1 || str.indexOf('0X')>-1){
+            }else if(str.indexOf('0x')>-1){
                 str = str.substring(2);
-                var strs = [];
+                strs = [];
                 for (var m= 0,n=0;m<str.length;m+=2){
                     strs[n] = str.substring(m,m+2);
                     n++;
                 }
-                for (var i=0;i<strs.length;i++){
+                for (i=0;i<strs.length;i++){
                     res += String.fromCharCode(parseInt(strs[i],16))
                 }
             }

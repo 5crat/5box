@@ -288,6 +288,15 @@ $(document).ready(function(){
         }
     };
 
+    var HexConvert = {
+        encode : function(str){
+            return parseInt(str, 16);
+        },
+        decode : function(str){
+            return parseInt(str).toString(16);
+        }
+    };
+
     /**
      * 监听“编码”按钮点击动作
      */
@@ -316,6 +325,9 @@ $(document).ready(function(){
                 break;
             case "StringCharCode":
                 result = StringCharCode.encode(input);
+                break;
+            case "hexConvert":
+                result = HexConvert.encode(input) + '    (10 hex)';
                 break;
         }
         $('#outCode').val(result);
@@ -350,6 +362,9 @@ $(document).ready(function(){
                 break;
             case "StringCharCode":
                 result = StringCharCode.decode(input);
+                break;
+            case "hexConvert":
+                result = HexConvert.decode(input) + '    (16 hex)';
                 break;
         }
         $('#outCode').val(result);

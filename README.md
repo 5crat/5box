@@ -16,7 +16,7 @@
 
 > encode: &nbsp;&nbsp;哈哈 ---> 5ZOI5ZOI
 
-> decode: &nbsp;&nbsp; 
+> decode: &nbsp;&nbsp; aGVoZQ== --> hehe
 
 + HtmlToDec (html十进制编码解码)
 
@@ -60,10 +60,10 @@
 
 _____
 
-上面的功能和解码都是我自己比较常用的一些，大伙可根据自己需求调整添加，除了上面那些编码解码功能，还加入了cookie利用工具，其中cookie injection参考了cos的插件，我基本没用过几次
+####上面的功能和解码都是我自己比较常用的一些，大伙可根据自己需求调整添加，除了上面那些编码解码功能，还加入了cookie利用工具，其中cookie injection参考了cos的插件，我基本没用过几次
 
-主要功能实现代码在/src/js/devtoolbox.js
+##主要功能实现代码在/src/js/devtoolbox.js
 
-插件可能有bug存在，反正我还没发现，如果你发现了bug，自己修改。。。
+####插件可能有bug存在，反正我还没发现，如果你发现了bug，自己修改。。。
 
-如何添加到chrome不用说应该都知道
+##如何添加到chrome不用说应该都知道

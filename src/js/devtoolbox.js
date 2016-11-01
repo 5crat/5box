@@ -327,7 +327,7 @@ $(document).ready(function(){
                 result = StringCharCode.encode(input);
                 break;
             case "hexConvert":
-                result = HexConvert.encode(input) + '    (10 hex)';
+                result = HexConvert.encode(input) + '    (Dec)';
                 break;
         }
         $('#outCode').val(result);
@@ -364,7 +364,7 @@ $(document).ready(function(){
                 result = StringCharCode.decode(input);
                 break;
             case "hexConvert":
-                result = HexConvert.decode(input) + '    (16 hex)';
+                result = HexConvert.decode(input) + '    (Hex)';
                 break;
         }
         $('#outCode').val(result);

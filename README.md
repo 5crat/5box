@@ -8,57 +8,55 @@
 
 + Unicode
 
->> encode: &nbsp;&nbsp;test ---> \u0074\u0065\u0073\u0074    
+> encode: &nbsp;&nbsp;test ---> \u0074\u0065\u0073\u0074    
 
->> decode: &nbsp;&nbsp;哈哈--->\u54c8\u54c8
+> decode: &nbsp;&nbsp;哈哈--->\u54c8\u54c8
 
 + Base64
 
->> encode: &nbsp;&nbsp;哈哈 ---> 5ZOI5ZOI
+> encode: &nbsp;&nbsp;哈哈 ---> 5ZOI5ZOI
 
->> decode: &nbsp;&nbsp; 
+> decode: &nbsp;&nbsp; 
 
 + HtmlToDec (html十进制编码解码)
 
->> encode: &nbsp;&nbsp;haha ---> &#104;&#97;&#104;&#97
+> encode: &nbsp;&nbsp;haha ---> &#104;&#97;&#104;&#97
 
->> decode: &nbsp;&nbsp;&#104;&#101;&#104;&#101 ---> hehe
+> decode: &nbsp;&nbsp;&#104;&#101;&#104;&#101 ---> hehe
 
 + HtmlToHex (html十六进制编码解码)
 
->> encode: &nbsp;&nbsp;haha ---> &#x0068;&#x0061;&#x0068;&#x0061
+> encode: &nbsp;&nbsp;haha ---> &#x0068;&#x0061;&#x0068;&#x0061
 
->> decode: &nbsp;&nbsp;&#x0068;&#x0065;&#x0068;&#x0065 ---> hehe
+> decode: &nbsp;&nbsp;&#x0068;&#x0065;&#x0068;&#x0065 ---> hehe
 
 + Urlencode (url编码解码)
 
->> encode: &nbsp;&nbsp;onerror="1">  ---> onerror%3D%221%22%3E
+> encode: &nbsp;&nbsp;onerror="1">  ---> onerror%3D%221%22%3E
 
->> decode: &nbsp;&nbsp;%3Fid%3D1%27   ---> ?id=1'
+> decode: &nbsp;&nbsp;%3Fid%3D1%27   ---> ?id=1'
 
 + StringCharCode 
 
-> eg:
-  
->> encode: &nbsp;&nbsp; test ---> 116,101,115,116
+> encode: &nbsp;&nbsp; test ---> 116,101,115,116
 
->> decode: &nbsp;&nbsp; 104,97,104,97 ---> haha
+> decode: &nbsp;&nbsp; 104,97,104,97 ---> haha
 
->> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHAR(116)+CHAR(101)+CHAR(115)+CHAR(116) ---> test
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHAR(116)+CHAR(101)+CHAR(115)+CHAR(116) ---> test
            
->> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHAR(116,101,115,116) ---> test
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHAR(116,101,115,116) ---> test
 
 + MD5
 
->> encode: &nbsp;&nbsp; test ---> 098f6bcd4621d373cade4e832627b4f6
+> encode: &nbsp;&nbsp; test ---> 098f6bcd4621d373cade4e832627b4f6
 
->> decode: &nbsp;&nbsp; no support
+> decode: &nbsp;&nbsp; no support
 
 + Hex->Dec
 
->> encode: &nbsp;&nbsp; 16 --->  22 (dec)
+> encode: &nbsp;&nbsp; 16 --->  22 (dec)
 
->> decode: &nbsp;&nbsp; 10 --->  a  (hex)
+> decode: &nbsp;&nbsp; 10 --->  a  (hex)
 
 _____
 

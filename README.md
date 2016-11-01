@@ -8,15 +8,11 @@
 
 + Unicode
 
-> eg:
-
 >> encode: &nbsp;&nbsp;test ---> \u0074\u0065\u0073\u0074    
 
 >> decode: &nbsp;&nbsp;哈哈--->\u54c8\u54c8
 
 + Base64
-
-> eg:
 
 >> encode: &nbsp;&nbsp;哈哈 ---> 5ZOI5ZOI
 
@@ -24,15 +20,11 @@
 
 + HtmlToDec (html十进制编码解码)
 
-> eg:
-
 >> encode: &nbsp;&nbsp;haha ---> &#104;&#97;&#104;&#97
 
 >> decode: &nbsp;&nbsp;&#104;&#101;&#104;&#101 ---> hehe
 
 + HtmlToHex (html十六进制编码解码)
-
-> eg:
 
 >> encode: &nbsp;&nbsp;haha ---> &#x0068;&#x0061;&#x0068;&#x0061
 
@@ -40,9 +32,7 @@
 
 + Urlencode (url编码解码)
 
-> eg:
-
->> encode: &nbsp;&nbsp;<img/src="1">  ---> %3Cimg/src%3D%221%22%3E
+>> encode: &nbsp;&nbsp;onerror="1">  ---> onerror%3D%221%22%3E
 
 >> decode: &nbsp;&nbsp;%3Fid%3D1%27   ---> ?id=1'
 
@@ -60,15 +50,11 @@
 
 + MD5
 
-> eg:
-
 >> encode: &nbsp;&nbsp; test ---> 098f6bcd4621d373cade4e832627b4f6
 
 >> decode: &nbsp;&nbsp; no support
 
 + Hex->Dec
-
-> eg:
 
 >> encode: &nbsp;&nbsp; 16 --->  22 (dec)
 
